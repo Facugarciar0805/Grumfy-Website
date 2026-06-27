@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Grumfy Cookies</title>
+    <link rel="icon" type="image/png" href="Copy%20of%20Grumfy%20Isotype%20style%202.png">
+    <link rel="apple-touch-icon" href="Copy%20of%20Grumfy%20Isotype%20style%202.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Inter:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="auth-locked">
+    <header class="site-header">
+        <a class="brand" href="index.html">Grumfy Cookies</a>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="index.html#menu">Menú</a>
+            <a href="index.html#order">Orden</a>
+        </nav>
+    </header>
+
+    <main class="order-page">
+        <section class="order-confirmation">
+            <div class="section-heading">
+                <p class="eyebrow">Pedido</p>
+                <h1>Transferencia</h1>
+                <p>Usá este alias para hacer la transferencia y después mandá el comprobante.</p>
+            </div>
+
+            <div class="checkout-layout">
+                <section class="payment-box order-payment">
+                    <h2>Alias</h2>
+                    <p class="alias-text">ACÁ VA TU ALIAS</p>
+                    <p>Cuando termines, mandá el comprobante para confirmar tu orden.</p>
+                    <a class="button primary" id="receipt-link" href="mailto:mail@grunfy.com">Enviar comprobante</a>
+                </section>
+
+                <aside class="order-summary">
+                    <h2>Resumen de tu orden</h2>
+                    <div id="final-summary-items" class="summary-items">
+                        <p class="empty-message">No hay un pedido guardado.</p>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <strong id="final-summary-total">$0</strong>
+                    </div>
+                    <div class="final-details" id="final-details"></div>
+                    <a class="button secondary back-button" href="index.html#order">Volver a la compra</a>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <script src="auth-config.js"></script>
+    <script src="auth.js"></script>
+    <script src="pedido.js"></script>
+</body>
+
+</html>

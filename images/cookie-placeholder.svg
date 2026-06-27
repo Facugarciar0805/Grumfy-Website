@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Imagen pendiente</title>
+  <desc id="desc">Placeholder para reemplazar por una foto de cookie.</desc>
+  <rect width="900" height="620" fill="#d79956"/>
+  <circle cx="292" cy="206" r="28" fill="#5b3425"/>
+  <circle cx="583" cy="170" r="23" fill="#5b3425"/>
+  <circle cx="556" cy="370" r="31" fill="#5b3425"/>
+  <circle cx="410" cy="336" r="85" fill="#efc37c"/>
+  <path d="M218 494c114 52 263 52 421 0" fill="none" stroke="#5b3425" stroke-width="26" stroke-linecap="round"/>
+  <text x="450" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#3b2117">Imagen pendiente</text>
+</svg>
