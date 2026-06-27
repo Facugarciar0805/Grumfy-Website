@@ -1,5 +1,10 @@
-import './auth'
+import { getSession } from './session'
 import type { OrderData } from './types'
+
+const session = getSession()
+if (!session) {
+  window.location.href = '/'
+}
 
 const currency = new Intl.NumberFormat("es-AR", {
   style: "currency",
@@ -67,5 +72,5 @@ if (savedOrder && savedOrder.items && savedOrder.items.length > 0) {
   const body = encodeURIComponent(
     `Hola! Te mando el comprobante de mi pedido Grumfy.\n\nCantidad: ${savedOrder.itemCount || 0} cookies\nSubtotal: ${currency.format(savedOrder.subtotal || savedOrder.total)}\nDescuento: ${currency.format(savedOrder.discount || 0)}\nTotal: ${currency.format(savedOrder.total)}\nPickup: ${savedOrder.pickup || "-"}\nTelefono: ${savedOrder.phone || "-"}\nEmail: ${savedOrder.email || "-"}`
   )
-  receiptLink.href = `mailto:santigarciarosselli@gmail.com?subject=${subject}&body=${body}`
+  receiptLink.href = `mailto:santagarciarosselli@gmail.com?subject=${subject}&body=${body}`
 }

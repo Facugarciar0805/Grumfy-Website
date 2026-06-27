@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grumfy Cookies</title>
+    <link rel="icon" type="image/png" href="Copy%20of%20Grumfy%20Isotype%20style%202.png">
+    <link rel="apple-touch-icon" href="Copy%20of%20Grumfy%20Isotype%20style%202.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Inter:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <svg class="icon-defs" aria-hidden="true" focusable="false">
+        <symbol id="icon-wheat-free" viewBox="0 0 24 24">
+            <path d="M12 20V5"></path>
+            <path d="M12 9c-3 0-5-2-5-5 3 0 5 2 5 5Z"></path>
+            <path d="M12 13c-3 0-5-2-5-5 3 0 5 2 5 5Z"></path>
+            <path d="M12 17c-3 0-5-2-5-5 3 0 5 2 5 5Z"></path>
+            <path d="M12 9c3 0 5-2 5-5-3 0-5 2-5 5Z"></path>
+            <path d="M12 13c3 0 5-2 5-5-3 0-5 2-5 5Z"></path>
+            <path d="M12 17c3 0 5-2 5-5-3 0-5 2-5 5Z"></path>
+            <path d="M4 20 20 4"></path>
+        </symbol>
+        <symbol id="icon-milk-free" viewBox="0 0 24 24">
+            <path d="M8 3h8"></path>
+            <path d="M9 3v5l-2 3v10h10V11l-2-3V3"></path>
+            <path d="M9 14h6"></path>
+            <path d="M4 20 20 4"></path>
+        </symbol>
+        <symbol id="icon-egg-free" viewBox="0 0 24 24">
+            <path d="M12 21c4 0 7-3 7-7.5C19 8 16 3 12 3s-7 5-7 10.5C5 18 8 21 12 21Z"></path>
+            <path d="M4 20 20 4"></path>
+        </symbol>
+        <symbol id="icon-vegan" viewBox="0 0 24 24">
+            <path d="M5 19c9 0 14-7 14-14-7 0-14 5-14 14Z"></path>
+            <path d="M5 19c3-5 6-8 12-12"></path>
+        </symbol>
+        <symbol id="icon-peanut-free" viewBox="0 0 24 24">
+            <path
+                d="M9 21c-3 0-5-2-5-5 0-2 1-4 3-5-1-1-1-2-1-3 0-3 2-5 5-5 2 0 4 1 5 3 3 0 5 2 5 5 0 2-1 4-3 5 1 3-1 5-4 5-2 0-3-1-5 0Z">
+            </path>
+            <path d="M4 20 20 4"></path>
+        </symbol>
+        <symbol id="icon-almond-free" viewBox="0 0 24 24">
+            <path d="M12 21c5-3 8-7 8-12 0-3-2-5-5-5-5 0-9 5-11 11 2 3 5 5 8 6Z"></path>
+            <path d="M8 16c4-2 6-5 8-9"></path>
+            <path d="M4 20 20 4"></path>
+        </symbol>
+    </svg>
+
+    <header class="site-header">
+        <a class="brand" href="#top">Grumfy Cookies</a>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#menu">Menú</a>
+            <a href="#order">Orden</a>
+            <a href="#pickup">Pickup</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Cookies libres de gluten</p>
+                <h1>Grumfy Cookies</h1>
+                <p class="slogan">Cookies with character</p>
+                <p class="hero-text">
+                    Cookies con sabores clásicos y originales, para disfrutar de un sabor espléndido, con personalidad
+                    manteniendo tu dieta y salud.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#menu">Elegir cookies</a>
+                    <a class="button secondary" href="#allergens">Mirar alergenos</a>
+                </div>
+            </div>
+
+            <section class="hero-panel" aria-label="Grumfy cookie promise">
+                <div class="cookie-stack" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h2>Date un gusto saludable</h2>
+                <p>Los íconos simples te ayudan a detectar cuales cookies son aptas para tu dieta asi te quiedas
+                    mientras disfrutas del sabor único de nuestras cookies.
+                </p>
+            </section>
+        </section>
+
+        <section class="intro-band" id="allergens">
+            <div>
+                <h2>¡Está todo aclarado!</h2>
+                <p>
+                    Abajo de la descripción de cada cookie aparecen los íconos de alergenos.
+                    ¡Relajate!
+                </p>
+            </div>
+            <div class="allergen-legend" aria-label="Allergen symbol guide">
+                <span class="allergen-label">
+                    <svg>
+                        <use href="#icon-wheat-free"></use>
+                    </svg>
+                    Libre de gluten
+                </span>
+                <span class="allergen-label">
+                    <svg>
+                        <use href="#icon-milk-free"></use>
+                    </svg>
+                    Sin lactosa
+                </span>
+                <span class="allergen-label">
+                    <svg>
+                        <use href="#icon-egg-free"></use>
+                    </svg>
+                    Sin huevo
+                </span>
+                <span class="allergen-label">
+                    <svg>
+                        <use href="#icon-vegan"></use>
+                    </svg>
+                    Vegano
+                </span>
+                <span class="allergen-label">
+                    <svg>
+                        <use href="#icon-peanut-free"></use>
+                    </svg>
+                    Sin maní
+                </span>
+                <span class="allergen-label">
+                    <svg>
+                        <use href="#icon-almond-free"></use>
+                    </svg>
+                    Sin almendras
+                </span>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="section-heading">
+                <p class="eyebrow">Cookie menu</p>
+                <h2>Elegí tu sabor</h2>
+                <p>Sabores para todos los gustos</p>
+            </div>
+
+            <div class="cookie-grid">
+                <article class="cookie-card" data-name="Classic Cookie" data-price="3000">
+                    <figure class="cookie-image">
+                        <img src="Classic Cookie Top Down Photo.png" alt="Cookie Clásica">
+                    </figure>
+                    <div class="cookie-content">
+                        <div>
+                            <h3>Cookie Clásica</h3>
+                            <p>Una cookie de vainilla con chips de chocolate. Contiene manteca y huevo.</p>
+                        </div>
+                        <div class="allergen-icons" aria-label="Classic Cookie allergen symbols">
+                            <span class="allergen-icon" aria-label="Gluten free" title="Gluten free">
+                                <svg>
+                                    <use href="#icon-wheat-free"></use>
+                                </svg>
+                            </span>
+                            <span class="allergen-icon" aria-label="Peanut free" title="Peanut free">
+                                <svg>
+                                    <use href="#icon-peanut-free"></use>
+                                </svg>
+                            </span>
+                            <span class="allergen-icon" aria-label="Almond free" title="Almond free">
+                                <svg>
+                                    <use href="#icon-almond-free"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="card-bottom">
+                            <strong>$3.000</strong>
+                            <label>
+                                <span>Cantidad</span>
+                                <select class="quantity-input">
+                                    <option value="0">0</option>
+                                    <option value="3">3</option>
+                                    <option value="6">6</option>
+                                    <option value="9">9</option>
+                                    <option value="12">12</option>
+                                    <option value="15">15</option>
+                                    <option value="18">18</option>
+                                    <option value="21">21</option>
+                                    <option value="24">24</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cookie-card" data-name="Lemon Cookie" data-price="3000">
+                    <figure class="cookie-image">
+                        <img src="images/cookie-placeholder.svg" alt="Lemon Cookie">
+                    </figure>
+                    <div class="cookie-content">
+                        <div>
+                            <h3>Lemon Cookie</h3>
+                            <p>Cookie de limón con un sabor único combinando cítrico con dulzor</p>
+                        </div>
+                        <div class="allergen-icons" aria-label="Lemon Cookie allergen symbols">
+                            <span class="allergen-icon" aria-label="Gluten free" title="Gluten free">
+                                <svg>
+                                    <use href="#icon-wheat-free"></use>
+                                </svg>
+                            </span>
+                            <span class="allergen-icon" aria-label="Peanut free" title="Peanut free">
+                                <svg>
+                                    <use href="#icon-peanut-free"></use>
+                                </svg>
+                            </span>
+                            <span class="allergen-icon" aria-label="Almond free" title="Almond free">
+                                <svg>
+                                    <use href="#icon-almond-free"></use>
+                                </svg>
+                            </span>
+                            <span class="allergen-icon" aria-label="Almond free" title="Almond free">
+                                <svg>
+                                    <use href="#icon-egg-free"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="card-bottom">
+                            <strong>$3.000</strong>
+                            <label>
+                                <span>Cantidad</span>
+                                <select class="quantity-input">
+                                    <option value="0">0</option>
+                                    <option value="3">3</option>
+                                    <option value="6">6</option>
+                                    <option value="9">9</option>
+                                    <option value="12">12</option>
+                                    <option value="15">15</option>
+                                    <option value="18">18</option>
+                                    <option value="21">21</option>
+                                    <option value="24">24</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cookie-card" data-name="Frookie Tempt" data-price="3000">
+                    <figure class="cookie-image">
+                        <img src="Frookie Tempt Top Donw Photo.png" alt="Frookie Tempt">
+                    </figure>
+                    <div class="cookie-content">
+                        <div>
+                            <h3>Frookie Tempt</h3>
+                            <p>Cookie de vainilla con frutos rojos y un sabor irresistible.</p>
+                        </div>
+                        <div class="allergen-icons" aria-label="Frookie Tempt allergen symbols">
+                            <span class="allergen-icon" aria-label="Gluten free" title="Gluten free">
+                                <svg>
+                                    <use href="#icon-wheat-free"></use>
+                                </svg>
+                            </span>
+                            <span class="allergen-icon" aria-label="Peanut free" title="Peanut free">
+                                <svg>
+                                    <use href="#icon-peanut-free"></use>
+                                </svg>
+                            </span>
+                            <span class="allergen-icon" aria-label="Almond free" title="Almond free">
+                                <svg>
+                                    <use href="#icon-almond-free"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="card-bottom">
+                            <strong>$3.000</strong>
+                            <label>
+                                <span>Cantidad</span>
+                                <select class="quantity-input">
+                                    <option value="0">0</option>
+                                    <option value="3">3</option>
+                                    <option value="6">6</option>
+                                    <option value="9">9</option>
+                                    <option value="12">12</option>
+                                    <option value="15">15</option>
+                                    <option value="18">18</option>
+                                    <option value="21">21</option>
+                                    <option value="24">24</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cookie-card" data-name="Brookie" data-price="3000">
+                    <figure class="cookie-image">
+                        <img src="Brookie Top Down Image.png" alt="Brookie">
+                    </figure>
+                    <div class="cookie-content">
+                        <div>
+                            <h3>Brookie</h3>
+                            <p>El balance perfecto entre brownie y cookie, nunca falla.</p>
+                        </div>
+                        <div class="allergen-icons" aria-label="Brookie allergen symbols">
+                            <span class="allergen-icon" aria-label="Gluten free" title="Gluten free">
+                                <svg>
+                                    <use href="#icon-wheat-free"></use>
+                                </svg>
+                            </span>
+                            <span class="allergen-icon" aria-label="Peanut free" title="Peanut free">
+                                <svg>
+                                    <use href="#icon-peanut-free"></use>
+                                </svg>
+                            </span>
+                            <span class="allergen-icon" aria-label="Almond free" title="Almond free">
+                                <svg>
+                                    <use href="#icon-almond-free"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="card-bottom">
+                            <strong>$3.000</strong>
+                            <label>
+                                <span>Cantidad</span>
+                                <select class="quantity-input">
+                                    <option value="0">0</option>
+                                    <option value="3">3</option>
+                                    <option value="6">6</option>
+                                    <option value="9">9</option>
+                                    <option value="12">12</option>
+                                    <option value="15">15</option>
+                                    <option value="18">18</option>
+                                    <option value="21">21</option>
+                                    <option value="24">24</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cookie-card" data-name="Lemon Cookie" data-price="3000">
+                    <figure class="cookie-image">
+                        <img src="images/cookie-placeholder.svg" alt="Lemon Cookie">
+                    </figure>
+                    <div class="cookie-content">
+                        <div>
+                            <h3>Chocolate Cookie</h3>
+                            <p>Cookie de chocolate...</p>
+                        </div>
+                        <div class="allergen-icons" aria-label="Lemon Cookie allergen symbols">
+                            <span class="allergen-icon" aria-label="Gluten free" title="Gluten free">
+                                <svg>
+                                    <use href="#icon-wheat-free"></use>
+                                </svg>
+                            </span>
+                            <span class="allergen-icon" aria-label="Peanut free" title="Peanut free">
+                                <svg>
+                                    <use href="#icon-peanut-free"></use>
+                                </svg>
+                            </span>
+                            <span class="allergen-icon" aria-label="Almond free" title="Almond free">
+                                <svg>
+                                    <use href="#icon-almond-free"></use>
+                                </svg>
+                            </span>
+                            <span class="allergen-icon" aria-label="Almond free" title="Almond free">
+                                <svg>
+                                    <use href="#icon-egg-free"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="card-bottom">
+                            <strong>$3.000</strong>
+                            <label>
+                                <span>Cantidad</span>
+                                <select class="quantity-input">
+                                    <option value="0">0</option>
+                                    <option value="3">3</option>
+                                    <option value="6">6</option>
+                                    <option value="9">9</option>
+                                    <option value="12">12</option>
+                                    <option value="15">15</option>
+                                    <option value="18">18</option>
+                                    <option value="21">21</option>
+                                    <option value="24">24</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="checkout-section" id="order">
+            <div class="section-heading">
+                <p class="eyebrow">Checkout</p>
+                <h2>Revisá tu orden</h2>
+                <p>Fijate que esté todo bien y aclará donde vas a hacer el pickup.</p>
+            </div>
+
+            <div class="checkout-layout">
+                <form class="pickup-form" id="pickup">
+                    <h3>Detalles del pickup</h3>
+                    <label>
+                        Nombre completo
+                        <input type="text" name="name" placeholder="Name for the order" required>
+                    </label>
+                    <label>
+                        Teléfono
+                        <div class="phone-field">
+                            <span>+54 9</span>
+                            <input type="tel" name="phone" placeholder="11 1234 5678" inputmode="numeric"
+                                autocomplete="tel-national" maxlength="12" pattern="[0-9]{2} [0-9]{4} [0-9]{4}"
+                                title="Usá el formato 11 1234 5678" required>
+                        </div>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="tu@mail.com" autocomplete="email" required>
+                    </label>
+                    <label>
+                        Aclaración para el pickup
+                        <select name="pickup">
+                            <option value="Colegio Grumfy">Colegio Grumfy</option>
+                            <option value="Paseo Grumfy">Paseo Grumfy</option>
+                        </select>
+                    </label>
+                </form>
+
+                <aside class="order-summary" aria-live="polite">
+                    <h3>Resumen de tu orden</h3>
+                    <div id="summary-items" class="summary-items">
+                        <p class="empty-message">Todavía no agregaste cookies, aprovechá y date un gusto.</p>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <strong id="summary-total">$0</strong>
+                    </div>
+                    <p class="order-limit-message" id="order-limit-message"></p>
+                    <button class="button primary order-button" id="order-button" type="button" hidden>Hacer
+                        pedido</button>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Grumfy Cookies. Cookies libres de gluten.</p>
+    </footer>
+
+    <script type="module" src="/src/home.ts"></script>
+</body>
+
+</html>

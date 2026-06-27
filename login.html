@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grumfy Cookies</title>
+    <title>Iniciar sesión — Grumfy Cookies</title>
     <link rel="icon" type="image/png" href="Copy%20of%20Grumfy%20Isotype%20style%202.png">
     <link rel="apple-touch-icon" href="Copy%20of%20Grumfy%20Isotype%20style%202.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,22 +18,20 @@
     <main class="auth-layout">
         <div class="auth-card">
             <p class="eyebrow">Grumfy Cookies</p>
-            <h1>Ingresá con tu mail institucional</h1>
-            <p>Usá tu mail de <strong>@santamariapilar.edu.ar</strong> para acceder.</p>
-            <form id="email-form">
-                <label class="email-lock-label" for="email-name">Mail institucional</label>
-                <div class="locked-email">
-                    <input id="email-name" type="text" autocomplete="username" required pattern="[A-Za-z0-9._%+-]+"
-                        placeholder="tu.nombre">
-                    <span>@santamariapilar.edu.ar</span>
-                </div>
-                <p class="auth-error" id="email-error" aria-live="polite"></p>
-                <button class="button primary auth-submit" id="email-submit" type="submit">Continuar</button>
+            <h1>Iniciar sesión</h1>
+            <form id="login-form">
+                <label class="email-lock-label">Mail institucional</label>
+                <p class="auth-email-display" id="login-email"></p>
+                <label class="auth-label" for="login-password">Contraseña</label>
+                <input id="login-password" type="password" required minlength="6" placeholder="••••••••">
+                <p class="auth-error" id="login-error" aria-live="polite"></p>
+                <button class="button primary auth-submit" id="login-submit" type="submit">Entrar</button>
             </form>
+            <p class="auth-alt-link"><a href="/">Volver</a></p>
         </div>
     </main>
 
-    <script type="module" src="/src/email-entry.ts"></script>
+    <script type="module" src="/src/login-page.ts"></script>
 </body>
 
 </html>

@@ -37,3 +37,11 @@ export interface WeeklyState {
   ordered: number
   orders: Record<string, number>
 }
+
+export interface AuthUser {
+  id: string
+  name: string
+  email: string
+  phone: string
+  token: string
+}

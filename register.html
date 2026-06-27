@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta — Grumfy Cookies</title>
+    <link rel="icon" type="image/png" href="Copy%20of%20Grumfy%20Isotype%20style%202.png">
+    <link rel="apple-touch-icon" href="Copy%20of%20Grumfy%20Isotype%20style%202.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Inter:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="auth-page">
+    <main class="auth-layout">
+        <div class="auth-card">
+            <p class="eyebrow">Grumfy Cookies</p>
+            <h1>Crear cuenta</h1>
+            <form id="register-form">
+                <label class="email-lock-label">Mail institucional</label>
+                <p class="auth-email-display" id="register-email"></p>
+                <label class="auth-label" for="register-name">Nombre completo</label>
+                <input id="register-name" type="text" required placeholder="Tu nombre">
+                <label class="auth-label" for="register-phone">Teléfono</label>
+                <input id="register-phone" type="tel" required placeholder="11 1234 5678">
+                <label class="auth-label" for="register-password">Contraseña</label>
+                <input id="register-password" type="password" required minlength="6" placeholder="••••••••">
+                <label class="auth-label" for="register-confirm">Confirmar contraseña</label>
+                <input id="register-confirm" type="password" required minlength="6" placeholder="••••••••">
+                <p class="auth-error" id="register-error" aria-live="polite"></p>
+                <button class="button primary auth-submit" id="register-submit" type="submit">Crear cuenta</button>
+            </form>
+            <p class="auth-alt-link">¿Ya tenés cuenta? <a href="/">Ingresá</a></p>
+        </div>
+    </main>
+
+    <script type="module" src="/src/register-page.ts"></script>
+</body>
+
+</html>
